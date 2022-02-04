@@ -78,6 +78,11 @@ public class FridgeTest {
 		fridge.placeIn(item);
 		fridge.takeOut(item);
 	}
+
+	@Test
+	public void testInitialCapacity() {
+		assertEquals(20,fridge.totalSize());
+	}
 	
 	/**
 	 * Tests if you cannot take out an item from an empty fridge
